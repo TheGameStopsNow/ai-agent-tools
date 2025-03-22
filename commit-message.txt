@@ -1,0 +1,31 @@
+Initial commit: AI Agent Tools package
+
+This commit introduces the AI Agent Tools package, a comprehensive toolkit for
+automated testing, accessibility checking, and performance monitoring.
+
+Features:
+- Browser automation with Puppeteer
+- Accessibility testing with axe-core
+- Performance metrics collection
+- Screenshot capture and comparison
+- CI/CD integration support
+
+The package includes:
+- TypeScript types and interfaces
+- Comprehensive documentation
+- Example implementations
+- Test suite
+- CI/CD configuration
+
+Technical details:
+- Built with TypeScript
+- Uses Puppeteer for browser automation
+- Integrates axe-core for accessibility
+- Includes resemblejs for image comparison
+- Full test coverage
+- Documentation generated with TypeDoc
+
+Legal notice:
+This package is intended for legitimate testing and monitoring purposes only.
+Users are responsible for ensuring compliance with all applicable laws and
+regulations regarding automated testing and market manipulation. 

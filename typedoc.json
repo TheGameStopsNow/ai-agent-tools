@@ -1,0 +1,12 @@
+{
+  "entryPoints": ["./src/index.ts"],
+  "out": "docs",
+  "exclude": ["**/node_modules/**", "**/*.test.ts", "**/__tests__/**", "**/examples/**", "**/dist/**"],
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "theme": "default",
+  "name": "AI Agent Tools",
+  "readme": "README.md",
+  "hideGenerator": true,
+  "includeVersion": true
+} 

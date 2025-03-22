@@ -1,0 +1,68 @@
+{
+  "name": "@thegamestopsnow/ai-agent-tools",
+  "version": "1.0.0",
+  "description": "AI Agent Tools for automated testing, accessibility checking, and performance monitoring",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "prepare": "npm run build",
+    "docs": "typedoc --tsconfig tsconfig.docs.json --out docs src/index.ts",
+    "example:basic": "ts-node examples/basic-usage.ts",
+    "example:ci": "ts-node examples/ci-integration.ts",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "ai-agent",
+    "testing",
+    "accessibility",
+    "performance",
+    "automation",
+    "puppeteer",
+    "axe-core"
+  ],
+  "author": "Dennis Nedry",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheGameStopsNow/ai-agent-tools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TheGameStopsNow/ai-agent-tools/issues"
+  },
+  "homepage": "https://github.com/TheGameStopsNow/ai-agent-tools#readme",
+  "dependencies": {
+    "axe-core": "^4.8.4",
+    "canvas": "^3.1.0",
+    "puppeteer": "^24.4.0",
+    "resemblejs": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.19",
+    "@types/puppeteer": "^7.0.4",
+    "@types/resemblejs": "^3.1.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.1",
+    "@typescript-eslint/parser": "^7.0.1",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "jest": "^29.7.0",
+    "prettier": "^3.2.5",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typedoc": "^0.25.12",
+    "typescript": "^5.3.3"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "examples"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
