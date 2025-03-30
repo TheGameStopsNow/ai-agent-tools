@@ -1,0 +1,48 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+### AI Agent Rules:
+
+1. **Progress and Bug Tracking**:
+   - Regularly update the document [03_PROGRESS_REPORT.md](mdc:StoryForge/docs/03_PROGRESS_REPORT.md) to track progress and log any bugs.
+
+2. **Project Information**:
+    - Always keep [04_PROJECT_RULES.md](mdc:StoryForge/04_PROJECT_RULES.md) updated and refer to it regularly to avoid duplicating functionality and to work efficiently.
+
+3. **UI Components**:
+   - Always use **MUI** elements where applicable for consistency and styling.
+   - Use **MUI icons** instead of emojis.
+   - Ensure styling aligns with the **MUI theme**.
+
+4. **Layout and Structure**:
+   - Use **layouts**, **grids**, and **containers** to build pages and organize content properly.
+
+5. **Testing**:
+   - Always write tests when appropriate to ensure code reliability.
+
+6. **Consistency**:
+   - Follow established patterns from existing files. If uncertain, refer to them to maintain consistency.
+
+7. **Error Handling**:
+   - Check the console for any errors and fix them before requesting any review.
+
+8. **Documentation**:
+   - When making significant changes to core functionality, update the relevant documentation and the README file.
+
+9. **Animations**:
+   - Prefer using **Framer Motion** for animations.
+   - Use subtle, professional animations and transitions that follow motion design principles. Avoid "pop" animations; instead, elements should animate intelligently in and out to reflect their purpose.
+
+10. **Target Audience**:
+    - Design with retail traders in mind, partich little knowledge of the stock market. Aim for simplicity, ease of understanding, and aesthetic appeal.
+
+11. **New Features**:
+    - If a new feature or rule is introduced, create a "NEW RULES TO FOLLOW:" section at the top of the progress doc so I can add it to this list.
+
+12. **Screenshots**:
+    - You are allowed to use AI-agent tools to take screenshots without needing permission or checking with me first.
+
+13. **Build in correct folder** 
+    - Check your directory before beginning to work becasue you often build in the wrong place and miss entire project files already completed. No re-inventing the wheel.

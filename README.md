@@ -190,3 +190,39 @@ The application can be configured through:
 - Built with Streamlit and DaisyUI
 - Market data provided by various sources
 - Community contributions and feedback
+
+# StoryForge
+
+StoryForge is an advanced platform for interactive storytelling and choose-your-own-adventure style narratives. It provides authors with powerful tools to create, visualize, and analyze branching narratives.
+
+## Features
+
+- Interactive story creation with branching paths
+- Golden Path visualization and optimization
+- AI-assisted story analysis and recommendations
+- Reader feedback collection and analysis
+- Quality metrics and trend analysis
+- Email notifications for author engagement
+
+## Latest Updates
+
+### Golden Path Feedback System
+
+The Golden Path Feedback System allows readers to provide targeted feedback on specific story branches. Authors can view analytics, trends, and AI-generated recommendations based on reader feedback.
+
+Key features:
+- Detailed feedback statistics with rating distribution
+- Time-based trend analysis for quality metrics
+- AI-assisted recommendations for story improvements
+- Email notifications for new feedback
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Set up environment variables (.env file)
+4. Run the development server: `npm run dev`
+
+## Documentation
+
+For more detailed documentation on features and implementation, see the [docs](./docs) directory.

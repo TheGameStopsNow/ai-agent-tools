@@ -2,6 +2,19 @@ import { AIAgent } from '../AIAgent';
 import { TestServer } from './test-server';
 import { mkdirSync, existsSync } from 'fs';
 
+// Mock puppeteer
+jest.mock('puppeteer', () => ({
+  launch: jest.fn().mockResolvedValue({
+    newPage: jest.fn().mockResolvedValue({
+      goto: jest.fn(),
+      screenshot: jest.fn(),
+      evaluate: jest.fn(),
+      close: jest.fn(),
+    }),
+    close: jest.fn(),
+  }),
+}));
+
 describe('AIAgent', () => {
   let agent: AIAgent;
   let server: TestServer;

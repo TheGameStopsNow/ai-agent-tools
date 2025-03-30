@@ -63,6 +63,10 @@ export class AIAgent implements AIAgentInstance {
       return window.axe.run();
     });
     
+    if (!results || !results.violations) {
+      return [];
+    }
+
     return results.violations.map((violation: Result): AccessibilityViolation => ({
       id: violation.id,
       impact: violation.impact as AccessibilityViolation['impact'],
@@ -87,6 +91,16 @@ export class AIAgent implements AIAgentInstance {
         loadTime: timing.loadEventEnd - timing.navigationStart,
       };
     });
+
+    if (!metrics) {
+      return {
+        firstPaint: 0,
+        firstContentfulPaint: 0,
+        domContentLoaded: 0,
+        loadTime: 0,
+        timestamp: new Date().toISOString(),
+      };
+    }
 
     return {
       ...metrics,

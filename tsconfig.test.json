@@ -1,0 +1,28 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "types": ["jest", "node", "@testing-library/jest-dom"],
+    "paths": {
+      "@/app/*": ["./app/*"],
+      "@/components/*": ["./app/components/*"],
+      "@/services/*": ["./app/services/*"],
+      "@/hooks/*": ["./app/hooks/*"],
+      "@/utils/*": ["./app/utils/*"],
+      "@/lib/*": ["./app/lib/*"],
+      "@/types/*": ["./app/types/*"],
+      "@/styles/*": ["./app/styles/*"],
+      "@/public/*": ["./public/*"]
+    }
+  },
+  "include": [
+    "app/**/*.ts",
+    "app/**/*.tsx",
+    "app/**/*.test.ts",
+    "app/**/*.test.tsx",
+    "app/__tests__/**/*.ts",
+    "app/__tests__/**/*.tsx"
+  ]
+} 
